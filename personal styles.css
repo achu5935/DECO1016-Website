@@ -258,12 +258,12 @@ form .form-group > button:hover {opacity: 1}
   margin-top: 30px;
   border-radius: 50%; 
 }
-
+/* if input has error execute the following */
 form .form-group.has-error > input,
 form .form-group.has-error > select  {
   border: 2px solid #ff6361;
 }
-
+/* if input has success execute the following */
 form .form-group.has-success > input,
 form .form-group.has-success > select  {
   border: 2px solid #41a765;
