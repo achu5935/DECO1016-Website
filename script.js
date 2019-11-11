@@ -182,18 +182,20 @@
     alert("Success!");
   }
 
-
+//let name get the element by the ID of name and log it to the console
   let name = document.getElementById("name");
   console.log(name);
   
-
+//let name val be a value from the local storage input name
   let nameval = localStorage.getItem("name");
 
   document.body.append(nameval);     //show's name value on screen
   
+//call name when the event/actipn change happens
   name.addEventListener("change", function() {
     console.log(name.value);
-
+    
+//set name to name val so they are one and put into local storage for pages
     localStorage.setItem("name", name.value);
     
 
