@@ -1,7 +1,10 @@
+
+/*The progress bar*/
 .progress {
     margin: 80px auto;
 }
 
+/*The progress bar icons*/
 .progress img {
     width: 50px;
     margin-bottom: 10;
@@ -11,12 +14,14 @@ ul {
     text-align: center;
 }
 
+/*The progress bar icon position*/
 ul li {
     display: inline-block;
     width: 200px;
     position: relative;
 }
 
+/*The progress bar (actual bar)*/
 ul li .fa {
     background: #dedfe0;
     width: 16px;
@@ -36,7 +41,7 @@ ul li .fa::after {
     left: 0;
     z-index: -1;
 }
-
+/*The progress colours*/
 ul li:first-child .fa::after {
     width: 105px;
     left: 100px;
@@ -351,7 +356,7 @@ form .form-group.has-success > select  {
   to {top: 0; opacity: 1}
 }
 
-
+/*lock icon placing*/
 #lock {
 margin-left: 10px;
 margin-top: 10px;
