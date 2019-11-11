@@ -42,6 +42,7 @@ body {
   padding: 50px;
 }
 
+/* NAB Logo */
 .header img {
   width: 130px;
   height: 70px;
@@ -97,6 +98,7 @@ main {
   align-content: center;
 }
 
+/* columns for the image grid, so it has structure and looks aligned */
 .column {
   float: left;
   width: 33.3%;
@@ -105,12 +107,14 @@ main {
   text-align: center;
 }
 
+/* rows for the image grid, so it has structure and looks aligned */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* photos in the grid */
 #pic {
   width: 370px;
   height: 250px;
