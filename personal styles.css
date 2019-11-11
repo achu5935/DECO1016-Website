@@ -166,6 +166,7 @@ form .messages {
   color: #ff6361;
 }
 
+/*for all the div's called form-group, make it look like: */
 form .form-group {
   display: flex;
   flex-wrap: wrap;
@@ -173,12 +174,14 @@ form .form-group {
   margin-bottom: 10px; 
 }
 
+/* make the inout labels look like: */
 form .form-group > label {
   text-align: right;
   padding-right: 30px;
   width: 40%;
 }
 
+/* make the subtext look like: */
 form .form-group > label span {
   display: block;
   font-size: 0.75em;
