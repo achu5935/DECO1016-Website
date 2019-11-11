@@ -1,0 +1,358 @@
+.progress {
+    margin: 80px auto;
+}
+
+.progress img {
+    width: 50px;
+    margin-bottom: 10;
+}
+
+ul {
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+ul li .fa {
+    background: #dedfe0;
+    width: 16px;
+    height: 16px;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul li .fa::after {
+    content: '';
+    background: rgb(197, 197, 152);
+    height: 5px;
+    width: 205px;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+ul li:first-child .fa::after {
+    width: 105px;
+    left: 100px;
+}
+
+ul li:last-child .fa::after {
+    width: 105px;
+}
+
+ul li:nth-child(3) .fa {
+    background:#90a88f;
+}
+
+ul li:nth-child(3) .fa::after {
+    background: #90a88f;
+}
+
+ul li:nth-child(1) .fa {
+    background: #90a88f;
+}
+
+ul li:nth-child(2) .fa {
+    background: #90a88f;
+}
+
+ul li:nth-child(1) .fa::after {
+    background: #90a88f;
+}
+
+ul li:nth-child(2) .fa::after {
+    background: #90a88f;
+}
+
+ul li:nth-child(4) .fa::after {
+  background: rgb(85, 151, 85);
+}
+
+ul li:nth-child(4) .fa {
+  background: rgb(85, 151, 85);
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.header {
+  background: #4f4d4b;
+  color: white;
+  font-size: 30px;
+  height: 120px;
+}
+
+.header img {
+  width: 130px;
+  height: 70px;
+  text-align: left;
+  padding: 25px;
+}
+
+body {
+  background: #eaeaea;
+  color: black;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    body {
+
+      font-size: 15px;
+      background: white;
+      width: 100%;
+      
+    }
+}
+
+
+
+h1, h4 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  padding: 2em;
+  border-radius: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form * {
+  box-sizing: border-box;
+}
+
+form .messages {
+  flex: 0 0 100%;
+  text-align: right;
+  padding: 5px 0;
+  color: #ff6361;
+}
+
+form .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  margin-bottom: 10px; 
+}
+
+form .form-group > label {
+  text-align: right;
+  padding-right: 30px;
+  width: 40%;
+}
+
+form .form-group > label span {
+  display: block;
+  font-size: 0.75em;
+  opacity: 0.5;
+}
+
+label * {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+form .form-group > input, select {
+  padding: 15px;
+  border: none;
+  border: 0px;
+  border-radius: 20px;
+}
+
+form .form-group > button {
+  width: 160px;
+  padding: 15px;
+  margin-left: auto;
+  border: 0px;
+  background-color:  #ffffff;
+  color: #dd1919;
+  font-weight: bold;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+#save{
+  width: 160px;
+  padding: 15px;
+  margin-left: auto;
+  border: 0px;
+  background-color:  #f3e08d;
+  color: #070707;
+  font-weight: bold;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+form .form-group > button:hover {opacity: 1}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.2);
+}
+
+.flex-container .flex-column > img {
+  width: 90%;
+  margin-top: 30px;
+  border-radius: 50%; 
+}
+
+form .form-group.has-error > input,
+form .form-group.has-error > select  {
+  border: 2px solid #ff6361;
+}
+
+form .form-group.has-success > input,
+form .form-group.has-success > select  {
+  border: 2px solid #41a765;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.modal-footer {
+  text-align: center;
+  
+}
+
+/* Modal Button */
+.myBtn {
+  width: 160px;
+  padding: 25px;
+  margin-left: auto;
+  border: 0px;
+  background-color:  #ffffff;
+  color: #5c0606;
+  font-weight: bold;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Animation for modal boxes for ID */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+#lock {
+margin-left: 10px;
+margin-top: 10px;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+<title>Document</title>
+<link rel="stylesheet" href="financials styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="header">
+    <img src="/Images/logo 2.png">
+</div>
+
+<div class="progress">
+    <ul>
+        <li>
+            <img src="/Images/user-alt-solid copy.svg"> <br>
+            <i class="fa fa-check"></i>
+            <p>Personal Information</p>
+        </li>
+        <li>
+            <img src="/Images/briefcase-solid copy.svg"> <br>
+            <i class="fa fa-check"></i>
+            <p>Employment</p>
+        </li>
+        <li>
+            <img src="/Images/money-check-alt-solid copy.svg"> <br>
+            <i class="fa fa-refresh"></i>
+            <p>Financials</p>
+        </li>
+        <li>
+            <img src="/Images/address-card-solid copy.svg"> <br>
+            <i class="fa fa-times"></i>
+            <p>Identity Documents</p>
+        </li>
+    </ul>
+</div>
+
+<main>
+<form>
+
+<form action="post.html">
+<h2>Financials</h2>
+<p>We would like to know about your income, assets and expenses and debts. This is strictly confidential and isn't avaliable to public.</p> <br>
+
+
+<div class="form-group">
+        <label for="employment status">Income Type</label>
+        <select id="status" name="status">
+            <option value="">Salary</option>
+            <option value="AF">Wage</option>
+            <option value="DZ">Unemployed</option>
+        </select>
+        <div class="messages"></div>
+    </div>
+
+<div class="form-group">
+    <label for="employment status">Frequency of Income</label>
+    <select id="status" name="status">
+        <option value="">Weekly</option>
+        <option value="AF">Fortnightly</option>
+        <option value="AX">Monthly</option>
+        <option value="AL">Hourly</option>
+        <option value="DZ">Unemployed</option>
+    </select>
+    <div class="messages"></div>
+</div>
+
+<div class="form-group">
+    <label for="name">Yearly Income (after tax)</label>
+        <input type="text" id="name" name="name" placeholder="Enter your income here">
+    <div class="messages"></div>
+</div>
+          
+<div class="form-group">
+   <label for="title">Monthly expenses<span>Including Rent</span></label>
+        <input type="text" id="title" name="title" placeholder="Enter your job title here">
+    <div class="messages"></div>
+</div>
+
+<div class="form-group">
+    <label for="employment status">Asset Type</label>
+        <select id="status" name="status">
+            <option value="">Choose One</option>
+            <option value="AF">Cash or Cash Equivalent</option>
+            <option value="AX">Investments</option>
+            <option value="AL">Property</option>
+            <option value="DZ">Stock</option>
+            <option value="DZ">Patents</option>
+            <option value="DZ">Furniture, Vechiles or/and Antiques</option>
+            <option value="">None</option>
+        </select>
+    <div class="messages"></div>
+</div>
+
+<div class="form-group">
+        <label for="work">Do you have debt worth worht over $10 000 AUD?</label>
+        <div>
+            <label for="yes">
+                <input id="yes" name="yesorno" type="radio" value="yes"> Yes
+            </label>
+            <label for="no">
+                <input checked id="no" name="yesorno" type="radio" value="no"> No
+            </label>
+        </div>
+</div>
+
+<div class="form-group">
+    <label for="employment status">Debt Type</label>
+        <select id="status" name="status">
+            <option value="">Choose One</option>
+            <option value="AF">HECS</option>
+            <option value="AX">Personal Loan</option>
+            <option value="AL">Mortgage</option>
+            <option value="DZ">Credit Card Bills</option>
+            <option value="DZ">Utility Bills</option>
+            <option value="DZ">Unsecured Debt</option>
+            <option value="DZ">Secured Debt</option>
+            <option value="">None</option>
+        </select>
+    <div class="messages"></div>
+</div>
+
+<div class="form-group">
+    <label for="name">How much of your debt is still owed?</label>
+            <input type="text" id="name" name="name" placeholder="Enter your debt here">
+    <div class="messages"></div>
+</div>
+
+
+
+<div class="form-group">
+    <a href="Employment.html">
+        <button type="button" id="save">Back</button>
+    <a href="Identity.html">
+        <button type="button" id="next">Next</button>
+</div>
+    
+    
+</div>
+
+
+</form>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
