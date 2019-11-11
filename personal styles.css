@@ -1,11 +1,15 @@
+
+/*The progress bar*/
 .progress {
     margin: 80px auto;
 }
 
+/*The progress bar icons*/
 .progress img {
     width: 50px;
     margin-bottom: 10;
 }
+
 
 ul {
     text-align: center;
@@ -37,6 +41,7 @@ ul li .fa::after {
     z-index: -1;
 }
 
+/*The progress bar colours*/
 ul li:first-child .fa::after {
     width: 105px;
     left: 100px;
@@ -143,6 +148,7 @@ main {
   border-radius: 30px;
 }
 
+/*Form attributes*/
 form {
   max-width: 600px;
   margin: 0 auto;
